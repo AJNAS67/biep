@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+
 
 import { UserRoutingModule } from './user-routing.module';
 import { DashboardComponent } from './dashboard/dashboard.component';
@@ -17,7 +17,7 @@ import { FilterModelComponent } from './filter-model/filter-model.component';
 import {MatDialogModule} from '@angular/material/dialog';
 
 
-
+import { CommonModule } from '@angular/common';
 
 
 
@@ -43,6 +43,7 @@ import {MatDialogModule} from '@angular/material/dialog';
 
     UserRoutingModule,
 
-  ]
+  ],
+  providers:[]
 })
 export class UserModule { }
