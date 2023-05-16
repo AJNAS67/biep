@@ -1,0 +1,108 @@
+  <!-- HEADER SECTION  -->
+<header class="header" id="header">
+  <div class="header__search">
+    <span class="material-symbols-outlined">search</span>
+    <input type="text" placeholder="Search for schools, faculties etc.">
+  </div>
+
+  <div class="header__profile">
+    <div class="header__profile-img"><img src="" alt=""></div>
+    <div class="header__profile-content">
+      <h4 class="header__profile-name">Profile Name</h4>
+      <h5 class="header__profile-position">Joint Director</h5>
+    </div>
+  </div>
+</header>
+
+<!-- SIDE BAR  -->
+
+<aside class="navbar  " id="navbar">
+    <nav>
+
+      <div class="header__logo">
+        <a href="#" class="nav__logo">
+            <img src="assets/logo.svg" alt="">
+        </a>
+      </div>
+
+      <div div class="nav-list">
+
+          <div class="nav__list-item active">
+            <a [routerLink]="['/user/dashboard']" class="nav__link " >
+              <div class="nav-icon">
+                <i class="iconsa-check"> </i>
+              </div>
+              <span>Dashboard</span>
+            </a>
+          </div>
+
+        <div class="nav__list-item ">
+          <a [routerLink]="['/user/reports']" class="nav__link ">
+            <div class="nav-icon">
+             <i class="isax-dcube"></i>
+            </div>
+            <span>Reports</span>
+          </a>
+        </div>
+
+        <div class="nav__list-item">
+          <a [routerLink]="['/user/employees']" class="nav__link">
+            <div class="nav-icon">
+             <i class="isax-dcube"></i>
+            </div>
+            <span>Employees</span>
+          </a>
+        </div>
+
+        <div class="nav__list-item">
+          <a [routerLink]="['/user/students']" class="nav__link">
+            <div class="nav-icon">
+             <i class="isax-dcube"></i>
+            </div>
+            <span>Students</span>
+          </a>
+        </div>
+
+        <div class="nav__list-item">
+          <a [routerLink]="['/user/exams']" class="nav__link">
+            <div class="nav-icon">
+             <i class="isax-dcube"></i>
+            </div>
+            <span>Exam/Result</span>
+          </a>
+        </div>
+
+        <div class="nav__list-item">
+          <a [routerLink]="['/user/feedetails']" class="nav__link">
+            <div class="nav-icon">
+             <i class="isax-dcube"></i>
+            </div>
+            <span>Fee Details</span>
+          </a>
+        </div>
+
+        <div class="nav__list-item">
+          <a [routerLink]="['/user/schools']" class="nav__link">
+            <div class="nav-icon">
+             <i class="isax-dcube"></i>
+            </div>
+            <span>Schools</span>
+          </a>
+        </div>
+
+
+      </div>
+      <div class="nav__list-item">
+        <a [routerLink]="['/user/exams']" class="nav__link ougout">
+          <div class="nav-icon">
+           <i class="isax-dcube"></i>
+          </div>
+          <span>Log Out</span>
+        </a>
+      </div>
+    </nav>
+</aside>
+<div class="content-wrap">
+
+  <router-outlet></router-outlet>
+</div>
