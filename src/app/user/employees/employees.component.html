@@ -1,5 +1,5 @@
 <main>
-  <div class="flex-between">
+  <div class="flex-between filter-wrap">
     <h1 class="section-title ">Employee Data -
       <span class="clr-text color-1">Andhra Pradesh State</span>
     </h1>
@@ -13,29 +13,29 @@
 
   <div class="row">
     <div class="col-12 col-md-3">
-      <div class="bieap-card color-1" [routerLink]="['/user/employees/list']">
+      <div class="bieap-card color-7" [routerLink]="['/user/employees/list']">
         <div class="bieap-row">
           <div class="icon-lg">
-            <img src="assets/school.svg" alt="">
+            <img src="../../../assets/teacher.svg" alt="">
           </div>
-          <h1 class="heading-1 bold">3,000</h1>
+          <h1 class="heading-1 bold">30,000</h1>
         </div>
-        <br>
+
         <p class="para-2">Number of Teaching Employees</p>
-        <p class="card-date mt-2">From 1,000 schools</p>
+        <p class="card-date my-2">From 1,000 schools</p>
       </div>
     </div>
     <div class="col-12 col-md-3">
-      <div class="bieap-card color-1" [routerLink]="['/user/employees/list']">
+      <div class="bieap-card color-2" [routerLink]="['/user/employees/list']">
         <div class="bieap-row">
           <div class="icon-lg">
-            <img src="assets/school.svg" alt="">
+            <img src="../../../assets/employees.svg" alt="">
           </div>
-          <h1 class="heading-1 bold">3,000</h1>
+          <h1 class="heading-1 bold">20,000</h1>
         </div>
-        <br>
+
         <p class="para-2">Non Teaching Employees Present</p>
-        <p class="card-date mt-2">From 1,000 schools</p>
+        <p class="card-date my-2">From 1,000 schools</p>
       </div>
     </div>
     <div class="col-12 col-md-6">
@@ -43,13 +43,13 @@
         <div class="row">
           <div class="col-12 col-md-6 border-r">
             <p>Employees Present</p>
-            <h2 class="heading-3 bold clr-text color-6 mt-2">45,000</h2>
-            <br>
+            <h2 class="heading-3 medium clr-text color-6 my-2">45,000</h2>
+
             <p>Employees Absent</p>
-            <h2 class="heading-3 bold clr-text color-5 mt-2">45,000</h2>
+            <h2 class="heading-3 medium clr-text color-5 my-2">45,000</h2>
 
           </div>
-          <div class="col-12 col-md-6">
+          <div class="col-12 col-md-6 d-flex flex-column justify-content-between">
             <div class="bieap-row">
               <div class="icon-md">
                 <img src="assets/school.svg" alt="">
@@ -59,7 +59,7 @@
                 <h5 class="mt-1 heading-4 medium">27,000</h5>
               </div>
             </div>
-            <br>
+
             <div class="bieap-row">
               <div class="icon-md">
                 <img src="assets/school.svg" alt="">
@@ -168,7 +168,7 @@
         <div class="bieap-row justify-content-between">
           <p class="card-head">Non Teaching Employee - Subject wise</p>
         </div>
-        <div class="scroll-list">
+        <div class="scroll-list var-height">
           <div class="subject-listing">
             <table class="table ">
               <tr>
@@ -282,7 +282,7 @@
     </div>
   </div>
 
-  <div class="flex-between">
+  <div class="flex-between filter-wrap">
     <h1 class="section-title ">Teacher Performance -
       <span class="clr-text color-1">Andhra Pradesh State</span>
     </h1>

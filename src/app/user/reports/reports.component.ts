@@ -3,6 +3,7 @@ import { MatDialog } from '@angular/material/dialog';
 
 import { trigger, state, style, transition, animate } from '@angular/animations';
 import { FilterModelComponent } from '../filter-model/filter-model.component';
+import { BsModalService, BsModalRef, ModalOptions } from 'ngx-bootstrap/modal';
 
 
 @Component({
@@ -21,19 +22,28 @@ import { FilterModelComponent } from '../filter-model/filter-model.component';
 })
 export class ReportsComponent implements OnInit {
 
-  constructor(private dialog: MatDialog) { }
+  bsModalRef!: BsModalRef;
+  constructor(private dialog: MatDialog,private modalService: BsModalService) { }
 
   ngOnInit(): void {
   }
-  filter(){
+  // filter(){
 
-    const dialogRef = this.dialog.open(FilterModelComponent, {
-      // dialog options
-    });
+  //   const dialogRef = this.dialog.open(FilterModelComponent, {
+  //      height: '400px',
+  //  width: '300px',
+  // panelClass:'filter-model',
 
-    dialogRef.afterClosed().subscribe(result => {
-      // handle dialog close event
-    });
+  //   });
+
+  //   dialogRef.afterClosed().subscribe(result => {
+
+  //   });
+  // }
+
+
+  filter() {
+
   }
 
 

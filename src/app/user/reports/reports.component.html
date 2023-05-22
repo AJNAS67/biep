@@ -1,115 +1,120 @@
 <main>
-  <div class="flex-between">
+  <div class="flex-between filter-wrap " data-bs-toggle="modal" data-bs-target="#schoolFilter">
     <h1 class="section-title ">Student - Admission and Enrolment -
       <span class="clr-text color-1">Andhra Pradesh State</span>
     </h1>
-    <button (click)="filter()">click</button>
 
-    <div class="filter-sec" >
+    <div class="filter-sec" (click)="filter()" >
       <span>Filter zones or schools</span>
       <span class="material-symbols-outlined">filter_alt</span>
     </div>
 
-
   </div>
+
   <div class="row">
     <div class="col-12 col-lg-6">
       <div class="bieap-card">
         <div class="map">
-          <img src="../../../assets/map.svg" alt="">
+          <img src="assets/map.svg" alt="">
         </div>
       </div>
     </div>
     <div class="col-12 col-lg-6">
       <div class="row">
-        <div class="col-6">
-          <div class="bieap-card color-1 adm-sm-card">
+        <div class="col-12 col-sm-6">
+          <div class="adm-sm-card">
             <div class="bieap-row">
-              <div class="icon-lg">
-                <img src="../../../assets/school.svg" alt="">
+              <div class="icon-lg color-7">
+                 <span class="material-symbols-outlined color-7">add </span>
               </div>
               <div>
                 <p>New Admission</p>
                 <h1 class="heading-1 bold">1,000</h1>
               </div>
             </div>
-            <div class="row">
+            <div class="row w-100 mx-auto">
               <div class="col-6   adm-foot">
                 <span>Boys</span>
-                <span class="fw-bold ms-2">20,000</span>
+                <span class="fw-bold ms-2 text-black">20,000</span>
               </div>
               <div class="col-6 border-l  adm-foot">
-                <span>Boys</span>
-                <span class="fw-bold ms-2">20,000</span>
+                <span>Girls</span>
+                <span class="fw-bold ms-2 text-black">20,000</span>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-6">
-          <div class="bieap-card color-1 adm-sm-card">
+        <div class="col-12 col-sm-6 ">
+          <div class="adm-sm-card">
             <div class="bieap-row">
-              <div class="icon-lg">
-                <img src="../../../assets/school.svg" alt="">
+              <div class="icon-lg color-2">
+                <span class="material-symbols-outlined color-2">
+                  sync_alt
+                  </span>
               </div>
               <div>
-                <p>New Admission</p>
-                <h1 class="heading-1 bold">1,000</h1>
+                <p>Transferred ( T.C )</p>
+                <h1 class="heading-1 bold">5,000</h1>
               </div>
             </div>
-            <div class="row">
+            <div class="row w-100 mx-auto">
               <div class="col-6 adm-foot">
                 <span>Boys</span>
-                <span class="fw-bold ms-2">20,000</span>
+                <span class="fw-bold ms-2 text-black">20,000</span>
               </div>
               <div class="col-6 border-l  adm-foot">
-                <span>Boys</span>
-                <span class="fw-bold ms-2">20,000</span>
+                <span>Girls</span>
+                <span class="fw-bold ms-2 text-black">20,000</span>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-6">
-          <div class="bieap-card color-1 adm-sm-card">
+        <div class="col-12 col-sm-6">
+          <div class="color-1 adm-sm-card">
             <div class="bieap-row">
-              <div class="icon-lg">
-                <img src="../../../assets/school.svg" alt="">
+              <div class="icon-lg color-1">
+                <span class="material-symbols-outlined color-1">
+                  done
+                  </span>
               </div>
               <div>
-                <p>New Admission</p>
+                <p>Passed out - Year 1 </p>
                 <h1 class="heading-1 bold">1,000</h1>
               </div>
             </div>
-            <div class="row">
+            <div class="row w-100 mx-auto">
               <div class="col-6  adm-foot">
                 <span>Boys</span>
-                <span class="fw-bold ms-2">20,000</span>
+                <span class="fw-bold ms-2 text-black">20,000</span>
               </div>
               <div class="col-6 border-l  adm-foot">
-                <span>Boys</span>
-                <span class="fw-bold ms-2">20,000</span>
+                <span>Girls</span>
+                <span class="fw-bold ms-2 text-black">20,000</span>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-6">
-          <div class="bieap-card color-1 adm-sm-card">
+        <div class="col-12 col-sm-6">
+          <div class="color-1 adm-sm-card">
             <div class="bieap-row">
-              <div class="icon-lg">
-                <img src="../../../assets/school.svg" alt="">
+              <div class="icon-lg color-6">
+                <span class="material-symbols-outlined color-6">
+                  done
+                  </span>
               </div>
               <div>
-                <p>New Admission</p>
-                <h1 class="heading-1 bold">1,000</h1>
+                <p>Passed out - Year 2</p>
+                <h1 class="heading-1 bold">40,000</h1>
               </div>
             </div>
-            <div class="row">
+            <div class="row w-100 mx-auto">
               <div class="col-6  adm-foot">
                 <span>Boys</span>
-                <span class="fw-bold ms-2">20,000</span>
+                <span class="fw-bold ms-2 text-black">20,000</span>
               </div>
               <div class="col-6 border-l  adm-foot">
-                <span>Boys</span>
-                <span class="fw-bold ms-2">20,000</span>
+                <span>Girls</span>
+                <span class="fw-bold ms-2 text-black">20,000</span>
               </div>
             </div>
           </div>
@@ -121,7 +126,7 @@
   </div>
 
 
-  <div class="flex-between">
+  <div class="flex-between filter-wrap" >
     <h1 class="section-title ">Staff - Recruitment and Transfer -
       <span class="clr-text color-1">Andhra Pradesh State</span>
     </h1>
@@ -131,47 +136,49 @@
       <span class="material-symbols-outlined">filter_alt</span>
     </div>
   </div>
+
+
   <div class="row">
-    <div class="col-12 col-lg-4">
-      <div class="bieap-card staff-rec-trans color-7">
+    <div class="col-12 col-md-6 col-lg-4">
+      <div class="staff-rec-trans">
         <div class="row">
-          <div class="col-6 border-r">
-            <div class="bieap-row beap-pad">
-              <div class="icon-lg">
-                <img src="../../../assets/teacher.svg" alt="">
+          <div class="col-12 col-md-6 border-r">
+            <div class="bieap-row ">
+              <div class="icon-lg color-7">
+                <img src="assets/teacher.svg" alt="">
               </div>
                <div>
                 <p>Teaching</p>
-                <h1 class="heading-1 bold">1,000</h1>
+                <h1 class="heading-1 bold">2,500</h1>
               </div>
 
             </div>
           </div>
-          <div class="col-6">
-            <div class="bieap-row beap-pad">
-              <div class="icon-lg">
-                <img src="../../../assets/teacher.svg" alt="">
+          <div class="col-12 col-md-6">
+            <div class="bieap-row ">
+              <div class="icon-lg color-2">
+                <img src="assets/employees.svg" alt="">
               </div>
                <div>
                 <p>Non Teaching</p>
-                <h1 class="heading-1 bold">1,000</h1>
+                <h1 class="heading-1 bold">40,000</h1>
               </div>
 
             </div>
           </div>
           <div class="col-12 ">
-            <p class="border-t beap-pad text-center">New Staffs Recruited <span>5,000</span></p>
+            <p class="border-t new-staff text-center">New Staffs Recruited <span class="heading-1 bold">5,000</span></p>
           </div>
         </div>
       </div>
     </div>
-   <div class="col-12 col-lg-4">
-      <div class="bieap-card staff-rec-trans color-7">
+   <div class="col-12 col-md-6 col-lg-4">
+      <div class=" staff-rec-trans color-7">
         <div class="row">
-          <div class="col-6 border-r">
-            <div class="bieap-row beap-pad">
-              <div class="icon-lg">
-                <img src="../../../assets/teacher.svg" alt="">
+          <div class="col-12 col-md-6 border-r">
+            <div class="bieap-row ">
+              <div class="icon-lg color-7">
+                <img src="assets/teacher.svg" alt="">
               </div>
                <div>
                 <p>Teaching</p>
@@ -180,10 +187,10 @@
 
             </div>
           </div>
-          <div class="col-6">
-            <div class="bieap-row beap-pad">
-              <div class="icon-lg">
-                <img src="../../../assets/teacher.svg" alt="">
+          <div class="col-12 col-md-6">
+            <div class="bieap-row ">
+              <div class="icon-lg color-2">
+                <img src="assets/employees.svg" alt="">
               </div>
                <div>
                 <p>Non Teaching</p>
@@ -193,18 +200,18 @@
             </div>
           </div>
           <div class="col-12 ">
-            <p class="border-t beap-pad text-center">New Staffs Recruited <span>5,000</span></p>
+            <p class="border-t new-staff text-center">New Staffs Recruited <span class="heading-1 bold">5,000</span></p>
           </div>
         </div>
       </div>
     </div>
-   <div class="col-12 col-lg-4">
-      <div class="bieap-card staff-rec-trans color-7">
+   <div class="col-12 col-md-6 col-lg-4">
+      <div class=" staff-rec-trans">
         <div class="row">
-          <div class="col-6 border-r">
-            <div class="bieap-row beap-pad">
-              <div class="icon-lg">
-                <img src="../../../assets/teacher.svg" alt="">
+          <div class="col-12 col-md-6 border-r">
+            <div class="bieap-row ">
+              <div class="icon-lg color-7">
+                <img src="assets/teacher.svg" alt="">
               </div>
                <div>
                 <p>Teaching</p>
@@ -213,10 +220,10 @@
 
             </div>
           </div>
-          <div class="col-6">
-            <div class="bieap-row beap-pad">
-              <div class="icon-lg">
-                <img src="../../../assets/teacher.svg" alt="">
+          <div class="col-12 col-md-6">
+            <div class="bieap-row ">
+              <div class="icon-lg color-2">
+                <img src="assets/employees.svg" alt="">
               </div>
                <div>
                 <p>Non Teaching</p>
@@ -226,14 +233,14 @@
             </div>
           </div>
           <div class="col-12 ">
-            <p class="border-t beap-pad text-center">New Staffs Recruited <span>5,000</span></p>
+            <p class="border-t new-staff text-center">New Staffs Recruited <span class="heading-1 bold">5,000</span></p>
           </div>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="flex-between">
+  <div class="flex-between filter-wrap">
     <h1 class="section-title ">Fee Collection Report -
       <span class="clr-text color-1">Andhra Pradesh State</span>
     </h1>
@@ -243,8 +250,9 @@
       <span class="material-symbols-outlined">filter_alt</span>
     </div>
   </div>
+
   <div class="row fee-collec">
-    <div class="col-12 col-md-4">
+    <div class="col-12 col-md-6 col-lg-4">
       <div class="bieap-card text-center">
         <p><span class="clr-text color-1">94.5%</span>of total fee collected</p>
         <div class="progress">
@@ -260,26 +268,26 @@
       <span>Total fee to be collected <span class="heading-3 bold">₹1,00,000/- </span></span>
       </div>
     </div>
-    <div class="col-12 col-md-4">
+    <div class="col-12 col-md-6 col-lg-4">
       <div class="bieap-card color-4">
         <div class="bieap-row">
           <div class="icon-lg">
-            <img src="../../../assets/rupee.svg" alt="">
+            <img src="assets/rupee.svg" alt="">
           </div>
-          <div class="beap-pad">
+          <div>
             <p>Total Fee Collected</p>
             <h1 class="heading-3 bold">₹ 94,500/-</h1>
           </div>
         </div>
       </div>
     </div>
-    <div class="col-12 col-md-4">
-      <div class="bieap-card color-4">
+    <div class="col-12 col-md-6 col-lg-4">
+      <div class="bieap-card color-5">
         <div class="bieap-row">
             <div class="icon-lg">
-              <img src="../../../assets/rupee.svg" alt="">
+              <img src="assets/rupee 2.svg" alt="">
             </div>
-            <div class="beap-pad">
+            <div >
               <p>Due amount</p>
               <h1 class="heading-3 bold">₹ 5,500/-</h1>
             </div>
@@ -289,7 +297,7 @@
 
   </div>
 
-  <div class="flex-between">
+  <div class="flex-between filter-wrap">
     <h1 class="section-title ">Facilities -
       <span class="clr-text color-1">Andhra Pradesh State</span>
     </h1>
@@ -301,68 +309,213 @@
   </div>
 
   <div class="row">
-    <div class="col-12 col-md-3">
-      <div class="bieap-card color-1">
+    <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+      <div class="bieap-card color-6">
         <div class="flex-center gap-12">
             <div class="icon-lg">
-              <img src="../../../assets/school.svg" alt="">
+              <img src="assets/bathroom.svg" alt="">
             </div>
             <h1 class="heading-3 bold">1,000</h1>
         </div>
         <p class="text-center mt-2">Schools with Sanitary facility</p>
       </div>
     </div>
-    <div class="col-12 col-md-3">
-      <div class="bieap-card color-1">
+    <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+      <div class="bieap-card color-2">
         <div class="flex-center gap-12">
             <div class="icon-lg">
-              <img src="../../../assets/school.svg" alt="">
+              <img src="assets/food.svg" alt="">
             </div>
             <h1 class="heading-3 bold">1,000</h1>
         </div>
-        <p class="text-center mt-2">Schools with Sanitary facility</p>
+        <p class="text-center mt-2">Schools providing Food</p>
       </div>
     </div>
-    <div class="col-12 col-md-3">
-      <div class="bieap-card color-1">
+    <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+      <div class="bieap-card color-5">
         <div class="flex-center gap-12">
             <div class="icon-lg">
-              <img src="../../../assets/school.svg" alt="">
+              <img src="assets/sm-class.svg" alt="">
             </div>
             <h1 class="heading-3 bold">1,000</h1>
         </div>
-        <p class="text-center mt-2">Schools with Sanitary facility</p>
+        <p class="text-center mt-2">Schools with Smart Class</p>
       </div>
     </div>
-    <div class="col-12 col-md-3">
-      <div class="bieap-card color-1">
+    <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+      <div class="bieap-card color-7">
         <div class="flex-center gap-12">
             <div class="icon-lg">
-              <img src="../../../assets/school.svg" alt="">
+              <img src="assets/comp-lab.svg" alt="">
             </div>
             <h1 class="heading-3 bold">1,000</h1>
         </div>
-        <p class="text-center mt-2">Schools with Sanitary facility</p>
+        <p class="text-center mt-2">Schools with Computer labs</p>
       </div>
     </div>
   </div>
+<!-- Button trigger modal -->
+
 
 <!-- Modal -->
-<!-- <div class="modal fade" id="filter-sec" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+<div class="modal fade" id="schoolFilter" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog  modal-dialog-centered modal-dialog-scrollable">
     <div class="modal-content">
       <div class="modal-header">
-        <h1 class="heading-3 " id="staticBackdropLabel">Student - Admission and Enrolment </h1>
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Student - Admission and Enrolment </h1>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-      <div class="modal-body filter-model-pop">
+      <div class="modal-body">
+       <div class="select-sec row">
 
+        <div class="col-8 mb-2 select-all">Select All</div>
+        <div class="col-2">
+          <div class="round">
+           <input type="checkbox" checked id="checkbox1" />
+          <label for="checkbox1"></label>
+       </div>
+      </div>
+
+        <div class="col-8 mb-2">Zone -1</div>
+        <div class="col-2"><div class="round">
+    <input type="checkbox"  id="checkbox2" />
+    <label for="checkbox2"></label>
+  </div>
+</div>
+        <div class="col-8 mb-2">Zone -1</div>
+        <div class="col-2"><div class="round">
+    <input type="checkbox"  id="checkbox3" />
+    <label for="checkbox3"></label>
+  </div>
+</div>
+        <div class="col-8 mb-2">Zone -1</div>
+        <div class="col-2"><div class="round">
+    <input type="checkbox"  id="checkbox4" />
+    <label for="checkbox4"></label>
+  </div>
+</div>
+        <div class="col-8 mb-2">Zone -1</div>
+        <div class="col-2"><div class="round">
+    <input type="checkbox"  id="checkbox5" />
+    <label for="checkbox5"></label>
+  </div>
+</div>
+        <div class="col-8 mb-2">Zone -1</div>
+        <div class="col-2"><div class="round">
+    <input type="checkbox"  id="checkbox6" />
+    <label for="checkbox6"></label>
+  </div>
+</div>
+
+<div class="col-8 mb-2">Zone -1</div>
+        <div class="col-2"><div class="round">
+    <input type="checkbox"  id="checkbox7" />
+    <label for="checkbox7"></label>
+  </div>
+</div>
+
+<div class="col-8 mb-2">Zone -1</div>
+        <div class="col-2"><div class="round">
+    <input type="checkbox"  id="checkbox8" />
+    <label for="checkbox8"></label>
+  </div>
+</div>
+
+<div class="col-8 mb-2">Zone -1</div>
+        <div class="col-2"><div class="round">
+    <input type="checkbox"  id="checkbox9" />
+    <label for="checkbox9"></label>
+  </div>
+</div>
+
+<div class="col-8 mb-2">Zone -1</div>
+        <div class="col-2"><div class="round">
+    <input type="checkbox"  id="checkbox10" />
+    <label for="checkbox10"></label>
+  </div>
+</div>
+
+
+       </div>
+       <div class="select-sec row">
+
+        <div class="col-8 mb-2 select-all">Select All</div>
+        <div class="col-2">
+          <div class="round">
+           <input type="checkbox"  id="checkbox11" />
+          <label for="checkbox11"></label>
+       </div>
+      </div>
+
+        <div class="col-8 mb-2">Zone -1</div>
+        <div class="col-2"><div class="round">
+    <input type="checkbox"  id="checkbox12" />
+    <label for="checkbox12"></label>
+  </div>
+</div>
+        <div class="col-8 mb-2">Zone -1</div>
+        <div class="col-2"><div class="round">
+    <input type="checkbox"  id="checkbox13" />
+    <label for="checkbox13"></label>
+  </div>
+</div>
+        <div class="col-8 mb-2">Zone -1</div>
+        <div class="col-2"><div class="round">
+    <input type="checkbox"  id="checkbox14" />
+    <label for="checkbox14"></label>
+  </div>
+</div>
+        <div class="col-8 mb-2">Zone -1</div>
+        <div class="col-2"><div class="round">
+    <input type="checkbox"  id="checkbox15" />
+    <label for="checkbox15"></label>
+  </div>
+</div>
+        <div class="col-8 mb-2">Zone -1</div>
+        <div class="col-2"><div class="round">
+    <input type="checkbox"  id="checkbox16" />
+    <label for="checkbox16"></label>
+  </div>
+</div>
+
+<div class="col-8 mb-2">Zone -1</div>
+        <div class="col-2"><div class="round">
+    <input type="checkbox"  id="checkbox17" />
+    <label for="checkbox17"></label>
+  </div>
+</div>
+
+<div class="col-8 mb-2">Zone -1</div>
+        <div class="col-2"><div class="round">
+    <input type="checkbox"  id="checkbox18" />
+    <label for="checkbox18"></label>
+  </div>
+</div>
+
+<div class="col-8 mb-2">Zone -1</div>
+        <div class="col-2"><div class="round">
+    <input type="checkbox"  id="checkbox19" />
+    <label for="checkbox19"></label>
+  </div>
+</div>
+
+<div class="col-8 mb-2">Zone -1</div>
+        <div class="col-2"><div class="round">
+    <input type="checkbox"  id="checkbox20" />
+    <label for="checkbox20"></label>
+  </div>
+</div>
+
+
+       </div>
       </div>
       <div class="modal-footer">
-
+        <button type="button" class="btn apply-all" data-bs-dismiss="modal">Apply to all <span class="material-symbols-outlined">done</span></button>
+        <button type="button" class="btn apply">Apply</button>
       </div>
     </div>
   </div>
-</div> -->
+</div>
+
 </main>
 
