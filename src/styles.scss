@@ -918,7 +918,7 @@ hr{
               margin-bottom: 15px;
               width: calc(var(--nav-width) - 20px);
               border-radius: 8px;
-              transition: 0.3s ease-in-out;
+              transition: 0.1s ease-in-out;
               color: var(--borderColor);
               overflow: hidden;
 
@@ -957,7 +957,7 @@ hr{
             &:hover:not(&.active){
               .nav__link{
                 color: var(--color-1);
-                scale: 1.01;
+                scale: 1.03;
               }
               .nav-icon{
                 filter: invert(46%)
@@ -1196,17 +1196,30 @@ border-radius: 10px;
     tr:not(:first-child){
       background-color: var(--theme-color);
       border-radius: 12px;
+      transition: 0.4s ease-in-out;
       td{
-        border-radius: 12px 0 0 12px;
+        &:first-child{
+          border-radius: 12px 0 0 12px;
+        }
         &:last-child{
           border-radius:0 12px 12px 0;
         }
         p{
           padding: 16px;
+          transition: 0.4s ease-in-out;
         }
         .zone-num{
           font-weight: 800;
         }
+      }
+      &:hover{
+        background-color: var(--color-1);
+        cursor: pointer;
+
+        p{
+          color: #fff;
+        }
+
       }
     }
   }
@@ -1265,9 +1278,22 @@ hr{
 }
 
 .employee-list-table{
-  height: calc(100vh - 300px);
+  height: calc(100vh - 420px);
   overflow-y:scroll ;
 table {
+  border-collapse: separate;
+  border-spacing: 0 6px;
+
+  tr{
+    p{
+      transition: 0.4s ease-in-out;
+
+    }
+    &:hover td p{
+      color: var(--color-1);
+      cursor: pointer;
+    }
+  }
   thead th{
     padding: 12px;
     position: sticky;
@@ -1357,7 +1383,7 @@ table {
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background: url(./assets/map-icon.svg) no-repeat center/cover;
+  background: url(assets/map-icon.svg) no-repeat center/cover;
   display: inline-block;
   vertical-align: middle;
   margin-left: 12px;
@@ -1518,8 +1544,8 @@ border: none;
 
 }
 .icon-lg {
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
 
   img{
     width: 30px;
@@ -1543,6 +1569,13 @@ border: none;
 }
 .var-height{
   height: 205px;
+}
+.past-result .past-res-sec {
+  margin-bottom: 20px;
+  padding-inline: 15px;
+}
+.beap-pad {
+  padding: 15px;
 }
 }
 
