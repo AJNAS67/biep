@@ -17,6 +17,13 @@ export class LayoutComponent implements OnInit {
   isActiveRoute(route: string): boolean {
     return this.router.isActive(route, false);
   }
+  handleLogout(){
+    console.log('logout');
+    
+    localStorage.removeItem('isLogin')
+    this.router.navigateByUrl('/')
+
+  }
 
   selectTitle(name:any){
 

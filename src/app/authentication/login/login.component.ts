@@ -14,8 +14,9 @@ export class LoginComponent implements OnInit {
   }
   login(){
     console.log('fuc');
+    localStorage.setItem('isLogin','isLogin')
 
-    this._router.navigateByUrl('/user/dashboard')
+    this._router.navigate(['/dashboard']);
 
   }
 

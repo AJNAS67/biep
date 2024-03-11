@@ -27,73 +27,73 @@
 
       <div div class="nav-list">
 
-          <a class="nav__list-item " [routerLink]="['/user/dashboard']" routerLinkActive="active">
+          <a class="nav__list-item " [routerLink]="['/dashboard']" routerLinkActive="active">
             <div  class="nav__link "  >
               <div class="nav-icon">
-                <img *ngIf="isActiveRoute('/user/dashboard')" src="assets/dashboard-fill-icon.svg"  alt="">
-                <img *ngIf="!isActiveRoute('/user/dashboard')" src="assets/dashboard-icon.svg"  alt="">
+                <img *ngIf="isActiveRoute('/dashboard')" src="assets/dashboard-fill-icon.svg"  alt="">
+                <img *ngIf="!isActiveRoute('/dashboard')" src="assets/dashboard-icon.svg"  alt="">
               </div>
               <span>Dashboard</span>
             </div>
           </a>
 
-          <a class="nav__list-item " [routerLink]="['/user/reports']" routerLinkActive="active">
+          <a class="nav__list-item " [routerLink]="['/reports']" routerLinkActive="active">
             <div  class="nav__link ">
               <div class="nav-icon">
-              <img *ngIf="isActiveRoute('/user/reports')"  src="assets/report-fill-icon.svg" alt="">
-              <img *ngIf="!isActiveRoute('/user/reports')"  src="assets/report-icon.svg" alt="">
+              <img *ngIf="isActiveRoute('/reports')"  src="assets/report-fill-icon.svg" alt="">
+              <img *ngIf="!isActiveRoute('/reports')"  src="assets/report-icon.svg" alt="">
             </div>
             <span>Reports</span>
           </div>
         </a>
 
-        <a class="nav__list-item" [routerLink]="['/user/employees']" routerLinkActive="active">
+        <a class="nav__list-item" [routerLink]="['/employees']" routerLinkActive="active">
           <div class="nav__link">
             <div class="nav-icon">
-              <img *ngIf="isActiveRoute('/user/employees')"  src="assets/employees-fill-icon.svg" alt="">
-              <img *ngIf="!isActiveRoute('/user/employees')"  src="assets/employee-icon.svg" alt="">
+              <img *ngIf="isActiveRoute('/employees')"  src="assets/employees-fill-icon.svg" alt="">
+              <img *ngIf="!isActiveRoute('/employees')"  src="assets/employee-icon.svg" alt="">
             </div>
             <span>Employees</span>
           </div>
         </a>
 
-        <a class="nav__list-item" [routerLink]="['/user/students']" routerLinkActive="active">
+        <a class="nav__list-item" [routerLink]="['/students']" routerLinkActive="active">
           <div class="nav__link">
             <div class="nav-icon">
               <!-- <img src="assets/students-icon.svg" alt=""> -->
-              <img *ngIf="isActiveRoute('/user/students')"  src="assets/students-fill-icon.svg" alt="">
-              <img *ngIf="!isActiveRoute('/user/students')"  src="assets/students-icon.svg" alt="">
+              <img *ngIf="isActiveRoute('/students')"  src="assets/students-fill-icon.svg" alt="">
+              <img *ngIf="!isActiveRoute('/students')"  src="assets/students-icon.svg" alt="">
             </div>
             <span>Students</span>
           </div>
         </a>
 
-        <a class="nav__list-item" [routerLink]="['/user/exams']" routerLinkActive="active">
+        <a class="nav__list-item" [routerLink]="['/exams']" routerLinkActive="active">
           <div class="nav__link">
             <div class="nav-icon">
-              <img *ngIf="isActiveRoute('/user/exams')" src="assets/exam-result-fill-icon.svg" alt="">
-              <img *ngIf="!isActiveRoute('/user/exams')" src="assets/exam-result-icon.svg" alt="">
+              <img *ngIf="isActiveRoute('/exams')" src="assets/exam-result-fill-icon.svg" alt="">
+              <img *ngIf="!isActiveRoute('/exams')" src="assets/exam-result-icon.svg" alt="">
             </div>
             <span>Exam/Result</span>
           </div>
         </a>
 
-        <a class="nav__list-item" [routerLink]="['/user/feedetails']" routerLinkActive="active">
+        <a class="nav__list-item" [routerLink]="['/feedetails']" routerLinkActive="active">
           <div class="nav__link">
             <div class="nav-icon">
-              <img *ngIf="isActiveRoute('/user/feedetails')" src="assets/fee-details-fill-icon.svg" alt="">
-              <img *ngIf="!isActiveRoute('/user/feedetails')" src="assets/fee-details-icon.svg" alt="">
+              <img *ngIf="isActiveRoute('/feedetails')" src="assets/fee-details-fill-icon.svg" alt="">
+              <img *ngIf="!isActiveRoute('/feedetails')" src="assets/fee-details-icon.svg" alt="">
             </div>
             <span>Fee Details</span>
           </div>
         </a>
 
-        <div class="nav__list-item" [routerLink]="['/user/schools']" routerLinkActive="active">
+        <div class="nav__list-item" [routerLink]="['/schools']" routerLinkActive="active">
           <a class="nav__link">
             <div class="nav-icon">
               <!-- <img src="assets/schools-icon.svg" alt=""> -->
-              <img *ngIf="isActiveRoute('/user/schools')" src="assets/school-fill-icon.svg" alt="">
-              <img *ngIf="!isActiveRoute('/user/schools')" src="assets/schools-icon.svg" alt="">
+              <img *ngIf="isActiveRoute('/schools')" src="assets/school-fill-icon.svg" alt="">
+              <img *ngIf="!isActiveRoute('/schools')" src="assets/schools-icon.svg" alt="">
             </div>
             <span>Schools</span>
           </a>
@@ -102,7 +102,7 @@
 
       </div>
       <div class="nav__list-item">
-        <a [routerLink]="['/user/exams']" class="nav__link ougout">
+        <a (click)="handleLogout()" class="nav__link ougout">
           <div class="nav-icon">
             <img src="assets/logout-icon.svg" alt="">
           </div>

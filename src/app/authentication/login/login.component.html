@@ -201,7 +201,7 @@
             <img src="assets/logo.svg" alt="">
           </div>
           <!-- form -->
-            <form action="javascript:void(0)">
+            <form >
               <h1>Login</h1>
                 <div class="form-group">
                   <label for="username">
@@ -237,7 +237,7 @@
                     <input type="password" id="password" placeholder="Enter Password" autocomplete="off" />
                     <span class="material-symbols-outlined">visibility</span>
                 </div>
-                <button type="submit"  routerLink="/user/dashboard" >Login</button>
+                <button type="submit"  (click)="login()">Login</button>
             </form>
         </div>
     </div>
