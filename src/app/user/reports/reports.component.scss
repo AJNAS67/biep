@@ -1,6 +1,38 @@
-.custom-dialog .modal-dialog{
-  width: 500px;
-  height: 500px;
-  position: relative;
-}
+::ng-deep.owl-carousel .owl-nav {
+  margin:0px;
 
+      .owl-prev{
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      background-color: transparent !important ;
+      display: flex;
+      align-items: center;
+      width: fit-content;
+      cursor: pointer;
+    }
+
+    .owl-next{
+      position: absolute;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      background-color: transparent !important;
+      display: flex;
+      align-items: center;
+    }
+
+    i{
+      color: #a6a6a6;
+      font-size: 30px;
+    }
+
+    &:hover{
+      background-color: transparent;
+
+      i{
+        color: var(--color-1);
+      }
+    }
+}

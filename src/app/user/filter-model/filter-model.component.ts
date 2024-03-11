@@ -1,11 +1,13 @@
 import { Component, Inject, OnInit } from '@angular/core';
-import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
+import { MAT_DIALOG_DATA, MatDialogModule, MatDialogRef } from '@angular/material/dialog';
 
 
 @Component({
   selector: 'app-filter-model',
   templateUrl: './filter-model.component.html',
-  styleUrls: ['./filter-model.component.scss']
+  styleUrls: ['./filter-model.component.scss'],
+ 
+
 })
 export class FilterModelComponent implements OnInit {
 
@@ -13,5 +15,7 @@ export class FilterModelComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  close(){
+    this.dialogConfig.close()
+  }
 }

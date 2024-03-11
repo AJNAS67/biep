@@ -3,7 +3,8 @@ import { MatDialog } from '@angular/material/dialog';
 
 import { trigger, state, style, transition, animate } from '@angular/animations';
 import { FilterModelComponent } from '../filter-model/filter-model.component';
-import { BsModalService, BsModalRef, ModalOptions } from 'ngx-bootstrap/modal';
+
+import { CarouselModule, OwlOptions, SlidesOutputData } from 'ngx-owl-carousel-o';
 
 
 @Component({
@@ -22,31 +23,44 @@ import { BsModalService, BsModalRef, ModalOptions } from 'ngx-bootstrap/modal';
 })
 export class ReportsComponent implements OnInit {
 
-  bsModalRef!: BsModalRef;
-  constructor(private dialog: MatDialog,private modalService: BsModalService) { }
+
+
+  customOptions: OwlOptions = {
+    loop: false,
+    mouseDrag: false,
+    touchDrag: false,
+    pullDrag: false,
+    dots: false,
+    margin: 0,
+    navSpeed: 500,
+    navText: [ '<i class="ri-arrow-left-s-fill"></i>', '<i class="ri-arrow-right-s-fill"></i>' ],
+    responsive: {
+      0: {
+        items: 1
+      }
+    },
+    nav: true
+  }
+  constructor(private dialog: MatDialog,) { }
 
   ngOnInit(): void {
   }
-  // filter(){
 
-  //   const dialogRef = this.dialog.open(FilterModelComponent, {
-  //      height: '400px',
-  //  width: '300px',
-  // panelClass:'filter-model',
-
-  //   });
-
-  //   dialogRef.afterClosed().subscribe(result => {
-
-  //   });
-  // }
 
 
   filter() {
+    const dialogRef=this.dialog.open(FilterModelComponent,{
+     
 
+    });
+    dialogRef.afterClosed().subscribe(response=>{
+
+    })
   }
 
 
 
 
 }
+
+

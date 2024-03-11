@@ -14,10 +14,13 @@ import { EmployeeListComponent } from './employee-list/employee-list.component';
 import { SchoolListComponent } from './school-list/school-list.component';
 import { CollegeDetailsComponent } from './college-details/college-details.component';
 import { FilterModelComponent } from './filter-model/filter-model.component';
-import {MatDialogModule} from '@angular/material/dialog';
+import {MAT_DIALOG_DEFAULT_OPTIONS, MatDialogModule} from '@angular/material/dialog';
+import {MatCheckboxModule} from '@angular/material/checkbox';
+
 
 
 import { CommonModule } from '@angular/common';
+import { CarouselModule } from 'ngx-owl-carousel-o';
 
 
 
@@ -37,10 +40,10 @@ import { CommonModule } from '@angular/common';
 
   ],
   imports: [
-
+    MatCheckboxModule,
     MatDialogModule,
     CommonModule,
-
+    CarouselModule,
     UserRoutingModule,
 
   ],

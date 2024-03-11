@@ -7,8 +7,8 @@ import { LayoutComponent } from './layout/layout.component';
 import { UserComponent } from './user/user.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { ModalModule } from 'ngx-bootstrap/modal';
-import { MatDialogModule } from '@angular/material/dialog';
+
+
 
 
 @NgModule({
@@ -19,11 +19,11 @@ import { MatDialogModule } from '@angular/material/dialog';
   ],
   imports: [
 
-    MatDialogModule,  
+
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
-    ModalModule.forRoot()
+    
   ],
   providers: [],
   schemas:[CUSTOM_ELEMENTS_SCHEMA],

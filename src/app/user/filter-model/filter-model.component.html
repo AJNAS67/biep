@@ -1,9 +1,45 @@
 <div class="filter-model">
-  <div class="filter-wrap">
-    <h1 class="section-title">Student - Admission and Enrolment </h1>
+    <!-- <div class="filter-wrap">
+    <h1 class="section-title">Student - Admission and Enrolment   <button  [mat-dialog-close]>close</button> </h1>
     <div class="filter-model-contain">
       <div class="filter-model-sec"></div>
       <div class="filter-model-sec"></div>
     </div>
-  </div>
+  </div> -->
+
+    <button [mat-dialog-close]>close</button>
+    <div>
+        <div>
+            <div>
+                <div>
+                    <h1>Student - Admission and Enrolment </h1>
+                </div>
+                <div class="filter-model-contain">
+                    <div class="select-sec row">
+                        <div class="col-10 mb-2 select-all">Select All</div>
+                        <div class="col-2">
+                            <div class="round">
+                                <!-- <input type="checkbox" checked id="checkbox1" />
+                                <label for="checkbox1"></label> -->
+                                <mat-checkbox class="radio"></mat-checkbox>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="select-sec row">
+                        <div class="col-10 mb-2 select-all">Select All</div>
+                        <div class="col-2">
+                            <div class="round">
+                                <input type="checkbox" checked id="checkbox1" />
+                                <label for="checkbox1"></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn apply-all">Apply to all <span class="material-symbols-outlined">done</span></button>
+                    <button type="button" class="btn apply">Apply</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
